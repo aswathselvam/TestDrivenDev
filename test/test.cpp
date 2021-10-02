@@ -1,5 +1,19 @@
 #include <gtest/gtest.h>
+#include <limits>
+#include <math.h>
+#include "PidController.hpp"
 
-TEST(dummy, should_pass) {
-  EXPECT_EQ(1, 1);
+PidController pidController;
+
+TEST(pidControllerTest, boundedOutput) {
+  double max = std::numeric_limits<double>::infinity();
+  ASSERT_GT(pidController.Compute(max), 1000);
+}
+
+TEST(pidControllerTest, expectedValue) {
+  ASSERT_EQ(pidController.Compute(10), 10.0);
+}
+
+TEST(pidControllerTest, testdt) {
+  EXPECT_GT(pidController.getdt(), 0);
 }
