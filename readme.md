@@ -9,9 +9,14 @@ This code is part of "Test Driven Development" software development process whic
 This is a simple implementeation of a PID Controller for ACME Robotics, using [pair programming](https://en.wikipedia.org/wiki/Pair_programming) method.
 
 ## Contributors:
-Pair B: 
-* Part 1(base code implementation) - Driver: [**Aswath Muthuselvam**](https://github.com/aswathselvam) Navigator: [**Prannoy Namala**](https://github.com/PrannoyNamala) 
-
+Pair 1: 
+* Part A  
+Driver: [**Aswath Muthuselvam**](https://github.com/aswathselvam)  
+Navigator: [**Prannoy Namala**](https://github.com/PrannoyNamala)  
+* Part B  
+Driver: [**Pratik Bhujbal**](https://github.com/Prat33k-dev)  
+Navigator: [**Sumedh Reddy Koppula**](https://github.com/sumedhreddy90)
+  
 ## About PID Controller
 
 PID controller is by far the most common way of using feedback in a practical industrial system. The output of the PID Controller is based on present, past and future values of error in the system. There are three components in a PID Controller

@@ -39,9 +39,24 @@ PidController::PidController(double Kp, double Ki, double Kd, double dt)
  * @brief Computes the state based on target and actual state of the system
  */
 double PidController::Compute(double targetState) {
-  // Enter your code here
-
-  return 0;
+    // Calculate error
+double error = targetState - currentState_;
+// Calculation for Proportional term
+double proportionalTerm = kp_ * error;
+// Calculation for Integral term
+double integralTerm = ki_ * error * dt_;
+// Calculation for Derivative term
+double derivative = error / dt_;
+double derivativeTerm = kd_ * derivative;
+// Calculate total output
+double output = proportionalTerm + integralTerm + derivativeTerm;
+    if (output > 999) {
+        output = 999;
+    }
+    if (output < -50) {
+        output = -50;
+    }
+return output;
 }
 
 /**

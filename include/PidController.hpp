@@ -26,8 +26,8 @@
 class PidController {
  private:
   double kp_ = 1.0;
-  double kd_ = 0.0;
   double ki_ = 0.0;
+  double kd_ = 0.0;
   double dt_ = 0.1;
   double currentState_ = 0;
 
