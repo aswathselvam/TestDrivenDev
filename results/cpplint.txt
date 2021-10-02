@@ -1,0 +1,7 @@
+aswath@ubuntu:~/TestDrivenDev$ cpplint $( find . -name *.cpp -or -name *.hpp | grep -vE -e "^./build/" -e "^./vendor/" )
+Done processing ./app/PidController.cpp
+Done processing ./app/main.cpp
+Done processing ./include/PidController.hpp
+Done processing ./test/main.cpp
+Done processing ./test/test.cpp
+

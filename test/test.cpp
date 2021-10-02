@@ -1,10 +1,12 @@
+// Copyright 2021 Aswath Muthuselvam
+
 #include <gtest/gtest.h>
 #include <limits>
-#include <math.h>
-#include "PidController.hpp"
+#include <cmath>
+#include <PidController.hpp>
 
 PidController pidController;
-PidController pidController1(1,2,3,1);
+PidController pidController1(1, 2, 3, 1);
 
 
 TEST(pidControllerTest, boundedOutput) {
@@ -13,7 +15,7 @@ TEST(pidControllerTest, boundedOutput) {
 }
 
 TEST(pidControllerTest, expectedValue) {
-  ASSERT_EQ(pidController.Compute(10), 0);
+  ASSERT_EQ(pidController.Compute(10), 10.0);
 }
 
 TEST(pidControllerTest, testdt) {
