@@ -1,4 +1,4 @@
-# ENPM 808X- Week4 - PID Implementation using Test Driven Development
+# ENPM 808X - PID Implementation using Test Driven Development
 [![Build Status](https://app.travis-ci.com/aswathselvam/TestDrivenDev.svg?branch=main)](https://app.travis-ci.com/aswathselvam/TestDrivenDev)
 [![Coverage Status](https://coveralls.io/repos/github/aswathselvam/TestDrivenDev/badge.svg?branch=main)](https://coveralls.io/github/aswathselvam/TestDrivenDev?branch=main)
 ---
@@ -6,10 +6,11 @@
 ## Overview
 
 ENPM 808X Test Driven Development Assignment
-This is a simple implementeation of a PID Controller.
+This is a simple implementeation of a PID Controller for ACME Robotics, using [pair programming](https://en.wikipedia.org/wiki/Pair_programming) method.
 
+## Contributors:
 Pair B: 
-* Part1 - Driver: **Aswath Muthuselvam** Navigator: **Prannoy Namala** 
+* Part 1(base code implementation) - Driver: [**Aswath Muthuselvam**](https://github.com/aswathselvam) Navigator: [**Prannoy Namala**](https://github.com/PrannoyNamala) 
 
 
 ## UML Diagram
