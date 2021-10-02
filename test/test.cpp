@@ -7,11 +7,11 @@ PidController pidController;
 
 TEST(pidControllerTest, boundedOutput) {
   double max = std::numeric_limits<double>::infinity();
-  ASSERT_GT(pidController.Compute(max), 1000);
+  ASSERT_LT(pidController.Compute(max), 1000);
 }
 
 TEST(pidControllerTest, expectedValue) {
-  ASSERT_EQ(pidController.Compute(10), 10.0);
+  ASSERT_EQ(pidController.Compute(10), 0);
 }
 
 TEST(pidControllerTest, testdt) {
