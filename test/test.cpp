@@ -4,6 +4,8 @@
 #include "PidController.hpp"
 
 PidController pidController;
+PidController pidController(1,2,3,1);
+
 
 TEST(pidControllerTest, boundedOutput) {
   double max = std::numeric_limits<double>::infinity();
