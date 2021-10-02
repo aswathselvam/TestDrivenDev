@@ -5,12 +5,27 @@
 
 ## Overview
 
-ENPM 808X Test Driven Development Assignment
+This code is part of "Test Driven Development" software development process which is a concept in Agile.
 This is a simple implementeation of a PID Controller for ACME Robotics, using [pair programming](https://en.wikipedia.org/wiki/Pair_programming) method.
 
 ## Contributors:
 Pair B: 
 * Part 1(base code implementation) - Driver: [**Aswath Muthuselvam**](https://github.com/aswathselvam) Navigator: [**Prannoy Namala**](https://github.com/PrannoyNamala) 
+
+## About PID Controller
+
+PID controller is by far the most common way of using feedback in a practical industrial system. The output of the PID Controller is based on present, past and future values of error in the system. There are three components in a PID Controller
+-	Proportional Term: The proportional term accounts for the present value of the error.
+-	Intergral Term: The integral term accounts for the past values of the error. 
+-	Derivative term: The derivative term accounts for the future values of the error based on the rate of change.
+
+Here is a diagram of how PID Controller looks like
+![PID Controller](https://user-images.githubusercontent.com/7314342/135725156-99180a1f-32c4-4916-9115-1ab36f5d8dd9.png)
+
+The input/output relation of the PID Controller is given by,
+![PID Controller I/O relation](https://user-images.githubusercontent.com/7314342/135725245-f3f998ac-46e9-4142-b04b-b2a9297c12bc.png)
+
+The PID control Variable ```u(t)``` is then input to the process. The output from process is then compared to give us error value ```e(t)```. 
 
 
 ## UML Diagram
