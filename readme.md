@@ -9,7 +9,6 @@ This code is part of "Test Driven Development" software development process whic
 This is a simple implementeation of a PID Controller for ACME Robotics, using [pair programming](https://en.wikipedia.org/wiki/Pair_programming) method.
 
 ## Contributors:
-Pair 1: 
 * Part A  
 Driver: [**Aswath Muthuselvam**](https://github.com/aswathselvam)  
 Navigator: [**Prannoy Namala**](https://github.com/PrannoyNamala)  
