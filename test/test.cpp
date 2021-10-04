@@ -14,9 +14,17 @@ PidController pidController1(1, 2, 3, 1);
 /**
  * @brief Test for bounded output, given a large input
  */
-TEST(pidControllerTest, boundedOutput) {
-    ASSERT_LT(pidController.Compute(500), 1000);
+TEST(pidControllerTest, higherBoundedOutput) {
+    ASSERT_LT(pidController.Compute(10000), 1000);
 }
+
+/**
+ * @brief Test for bounded output, given a large input
+ */
+TEST(pidControllerTest, lowerBoundedOutput) {
+    ASSERT_GT(pidController.Compute(-1000), -50);
+}
+
 /**
  * @brief Test for checking if the formula 
  * is implemented correctly
