@@ -39,10 +39,10 @@ class PidController {
 
   /**
    * @brief Constructor to initialize  with user defined values
-   * @Param1: Kp is the value of proportional constant entered by user
-   * @Param2: Ki is the value of integral constant entered by user
-   * @Param3: Kd is the value of derivative constant entered by user
-   * @Param4: dt is the value sample time entered by user
+   * @param: Kp is the value of proportional constant entered by user
+   * @param: Ki is the value of integral constant entered by user
+   * @param: Kd is the value of derivative constant entered by user
+   * @param: dt is the value sample time entered by user
    *
    */
   PidController(double Kp, double Ki, double Kd, double dt);
@@ -50,7 +50,7 @@ class PidController {
   /**
    * @brief This method computes the magnitude of feedback for the system based 
    *        on the current state of the system and the target setpoint set by the user
-   * @param1 targetState is the target state which needs to be achieved.
+   * @param targetState is the target state which needs to be achieved.
    */
   double Compute(double targetState);
 
