@@ -35,7 +35,7 @@ class PidController {
   /**
    * @brief Class constructor to initialize  with default values
    */
-  PidController();
+  PidController(){};
 
   /**
    * @brief Constructor to initialize  with user defined values
