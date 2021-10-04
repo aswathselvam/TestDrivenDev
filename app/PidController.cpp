@@ -18,12 +18,6 @@
 #include <PidController.hpp>
 
 /**
- * @brief Constructs the PidController class object with default values
- */
-PidController::PidController() {
-}
-
-/**
  * @brief Constructs the PidController object with user defined values
  */
 PidController::PidController(double Kp, double Ki, double Kd, double dt)
