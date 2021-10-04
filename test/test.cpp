@@ -22,7 +22,7 @@ TEST(pidControllerTest, higherBoundedOutput) {
  * @brief Test for bounded output, given a large input
  */
 TEST(pidControllerTest, lowerBoundedOutput) {
-    ASSERT_GT(pidController.Compute(-1000), -50);
+    ASSERT_GE(pidController.Compute(-1000), -50);
 }
 
 /**
